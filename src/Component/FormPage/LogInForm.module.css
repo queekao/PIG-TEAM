@@ -1,0 +1,63 @@
+.wrapper {
+  margin: 20rem auto;
+  padding: 10rem;
+  animation: moveInBottom 1s forwards;
+}
+@media (max-width: 37.5em) {
+  .wrapper {
+    padding: 5rem 5rem;
+  }
+}
+.wrapper h2 {
+  color: var(--gray-dark);
+  display: block;
+  text-align: center;
+}
+.wrapper p {
+  margin-bottom: 2rem;
+  color: var(--gray-light);
+}
+.form {
+  margin: 0rem auto;
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  padding: 1rem 2rem;
+  padding-right: 20rem;
+  font-size: 1.8rem;
+  color: var(--gray-light);
+}
+@media (max-width: 37.5em) {
+  .form input {
+    padding: 1rem 2rem;
+    padding-right: 5rem;
+  }
+}
+.form label {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.form .button {
+  padding: 1rem 7rem;
+  font-size: 2.4rem;
+  background: var(--primary-gradient);
+  color: var(--primary-color-dark);
+}
+.buttonSignUp {
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem 7rem;
+  font-size: 2.4rem;
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  80% {
+  }
+  100% {
+    opacity: 1;
+  }
+}

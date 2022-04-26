@@ -1,0 +1,24 @@
+.list {
+  position: absolute;
+  bottom: 10rem;
+  left: 4.5rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  max-width: 20rem;
+}
+.list li svg {
+  fill: #131212;
+  width: 5rem;
+}
+@media (max-width: 56.25em) {
+  .list{
+    display: none;
+  }
+  .list li svg {
+    fill: #131212;
+    width: 5rem;
+  }
+}

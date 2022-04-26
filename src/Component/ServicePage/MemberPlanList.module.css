@@ -1,0 +1,63 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  margin: 40rem auto;
+  margin-bottom: 20rem;
+  max-width: 80vw;
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+}
+.list .item {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.8rem;
+  color: var(--gray-light);
+  border: 2px solid var(--primary-color-light);
+  padding: 2rem 2rem;
+  height: 40rem;
+  margin-right: 2rem;
+  max-width: 20rem;
+}
+@media (max-width: 56.25em) {
+  .list {
+    margin: 50rem auto;
+    margin-bottom: 15em;
+  }
+}
+@media (max-width: 37.5em) {
+  .list {
+    margin: 60rem auto;
+    margin-bottom: 20em;
+  }
+}
+.list h3 {
+  color: var(--primary-color-dark);
+}
+.service {
+  text-align: center;
+}
+.service .serviceItem {
+  text-align: center;
+}
+.serviceEnterprise {
+  font-size: 3.6rem;
+  text-align: center;
+  list-style: none;
+}
+.price {
+  color: var(--primary-color-light);
+  align-self: center;
+  font-size: 2.4rem;
+}
+.button {
+  padding: 1.2rem 2rem 1.2rem 6rem;
+  justify-self: center;
+  align-self: center;
+}

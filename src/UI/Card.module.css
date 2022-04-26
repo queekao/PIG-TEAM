@@ -1,0 +1,5 @@
+.wrapper {
+  background: #ffffff;
+  box-shadow: var(--shadow-middle);
+  border-radius: 10px;
+}

@@ -1,0 +1,11 @@
+.canvas {
+  touch-action: none !important;
+  height: 60rem !important;
+  /* background-color: #e881a7; */
+}
+@media (max-width: 56.25em) {
+  .canvas {
+    touch-action: none !important;
+    height: 50rem !important;
+  }
+}

@@ -1,0 +1,52 @@
+.intro {
+  list-style: none;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.intro h1 {
+  font-size: 6rem;
+  color: var(--gray-dark);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.intro .title {
+  display: flex;
+  align-items: flex-end;
+}
+
+.intro span {
+  font-size: 2.4rem;
+  color: var(--gray-dark);
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+.intro p {
+  font-size: 2rem;
+  color: var(--gray-dark);
+  opacity: 0.5;
+  font-family: Work Sans;
+  max-width: 40rem;
+  margin-top: 2rem;
+  line-height: 1.3;
+}
+@media (max-width: 56.25em) {
+  .intro {
+    list-style: none;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .intro h1 {
+    font-size: 4rem;
+  }
+  .intro span {
+    font-size: 1.8rem;
+  }
+  .intro p {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,27 @@
+.wrapper {
+  width: 70vw;
+  height: 100%;
+  margin: 20rem auto;
+  padding: 20rem 10rem;
+  text-align: center;
+}
+@media (max-width: 56.25em) {
+  .wrapper {
+    width: 60vw;
+    margin: 20rem auto;
+    padding: 10rem 8rem;
+    text-align: center;
+  }
+}
+.wrapper h1 {
+  margin-bottom: 5rem;
+  color: var(--gray-dark);
+}
+.wrapper p {
+  color: var(--gray-light);
+  margin-bottom: 9rem;
+  font-size: 2.4rem;
+}
+.wrapper h3 {
+  color: var(--primary-color-dark);
+}

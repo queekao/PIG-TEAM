@@ -1,0 +1,50 @@
+.formControl input,
+.formControl textarea .formControl label {
+  display: block;
+}
+.formControl label {
+  font-weight: bold;
+  color: var(--primary-color-dark);
+}
+
+.formControl input {
+  font: inherit;
+  border-radius: var(--border-radius-4);
+  border: 1.5px solid var(--primary-color-dark);
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+.formControl textarea {
+  font: inherit;
+  border-radius: var(--border-radius-4);
+  border: 1.5px solid var(--primary-color-dark);
+  font-size: 1.8rem;
+  padding: 1rem 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.formControl input::-webkit-input-placeholder,
+.formControl textarea::placeholder {
+  color: var(--primary-color-dark);
+  font-size: 1.6rem;
+}
+.formControl .textarea {
+  color: var(--gray-dark);
+  font-size: 1.6rem;
+}
+.formControl input:focus::-webkit-input-placeholder,
+.formControl textarea:focus::placeholder {
+  color: var(--primary-color-dark);
+  opacity: 0;
+}
+.formControl input:focus,
+.formControl .textarea:focus {
+  outline: none;
+  border-color: var(--primary-color-dark);
+  background-color: var(--secondary-color-light);
+}
+.error {
+  color: #cd98ae !important;
+  margin-bottom: 1rem !important;
+  display: inline-block;
+}

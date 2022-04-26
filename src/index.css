@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600&family=Sawarabi+Gothic&display=swap");
+body {
+  margin: 0;
+  font-family: "Sawarabi Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Sawarabi Gothic";
+}
+@media (max-width: 75em) {
+  /* TabLand */
+  html {
+    font-size: 56.5%;
+  }
+}
+@media (max-width: 56.25em) {
+  /* TabPort */
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 37.5em) {
+  /* Phone */
+  html {
+    font-size: 50%;
+  }
+}
+.centered {
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .carousel-status {
+  font-size: 2.4rem !important;
+}
+:root {
+  --primary-gradient: linear-gradient(
+    270.41deg,
+    #b7f8db -62.85%,
+    rgba(80, 167, 194, 0.36) 188.04%
+  );
+  --primary-gradient-upper: linear-gradient(180deg, #b3f2db 0%, #badde7 100%);
+  --gray-gradient: linear-gradient(
+    90deg,
+    #f2f2f2 0%,
+    rgba(236, 236, 236, 0) 100%
+  );
+  --gray-dark: #3d3d3d;
+  --gray-light: #6d6d6d;
+  --gray-lightness: #e6efef;
+  --primary-color-dark: #7eb0b0;
+  --primary-color-light: #ace7db;
+  --secondary-color-light: #e6efef;
+  --text-shadow-green: 0px 4px 4px 0px hsla(166, 52%, 35%, 0.4);
+  --shadow-light: 0px 4px 4px rgb(0 0 0 / 15%);
+  --shadow-middle: 0px 2px 2px rgba(0, 0, 0, 0.05),
+    0px 10px 25px rgba(0, 0, 0, 0.1);
+  --shadow-heavy: drop-shadow(0px 1px 15px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.18));
+  --border-radius-30: 30px;
+  --border-radius-4: 4px;
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.8rem;
+}
+@media (max-width: 37.5em) {
+  /* Phone */
+  h1 {
+    font-size: 5.4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}

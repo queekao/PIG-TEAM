@@ -1,0 +1,165 @@
+.header {
+  background: var(--primary-gradient);
+  width: 100vw;
+  font-family: "Franklin Gothic Medium", "Noto Sans", Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2.75rem;
+}
+.nav .logo {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  margin-left: 1rem;
+}
+.nav .logoText {
+  /* For both Logo and LogoText */
+  width: 80%;
+}
+.nav .burger {
+  display: none;
+  visibility: hidden;
+}
+@media (max-width: 56.25em) {
+  .nav {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+  .nav .logo {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+  }
+  .nav .burger {
+    display: inline-block;
+    visibility: visible;
+    padding: 2rem;
+    padding-bottom: 0;
+    margin-top: 0.5rem;
+    align-self: flex-start;
+    cursor: pointer;
+    grid-row: 1 / 2;
+    grid-column: 8 / 9;
+    width: 10rem;
+  }
+  .nav .logoText {
+    width: 10rem;
+  }
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-right: 5rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav li,
+.nav li a,
+.nav li li {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #fff;
+  line-height: 1.5;
+  text-shadow: var(--shadow-light);
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.nav li a.active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.nav li:not(:last-child) {
+  margin-right: 3rem;
+}
+.nav li:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+.nav .service {
+  display: flex;
+  flex-direction: column;
+}
+.nav .service li:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+/* This Reponsive setting for all item in nav*/
+@media (max-width: 56.25em) {
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+    height: 50%;
+    margin-right: 0;
+  }
+  .nav ul.hide {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+  .nav li,
+  .nav li a,
+  .nav li li {
+    display: inline-block;
+    font-size: 3.6rem;
+    color: #fff;
+    line-height: 1.5;
+    text-shadow: var(--shadow-light);
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-align: center;
+  }
+  .nav li:not(:last-child) {
+    margin-right: 0rem;
+  }
+}
+/* ///// */
+
+/* This burger for Responsive web under 56.25em */
+
+/* This Home icon is only for "ProductPage" */
+.home {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--primary-gradient);
+  border-radius: 0 0 0 20px;
+  width: 7rem;
+  height: 7rem;
+  cursor: pointer;
+  z-index: 100;
+}
+.home:hover,
+.home:active {
+  background: linear-gradient(
+    270.37deg,
+    #5cefae 2.19%,
+    rgba(45, 109, 129, 0.36) 190.29%
+  );
+}
+.home svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
