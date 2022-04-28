@@ -12,3 +12,4 @@
 
 # 6.Component Structure:https://drive.google.com/file/d/1Yk7hx4Pyh4x5CBHwrhmS0sM6PFuLNEj0/view?usp=sharing(View the component structure)
 # 6.UI flow :https://drive.google.com/file/d/1BP4loQZGXwnQDsFKCh9bTJIEo3gZJA0_/view?usp=sharing(View the UI flow and functionality)
+# 6.Business Logic :https://drive.google.com/file/d/1Mizjv6T6b1DctvTjNatPOosoISITNenM/view?usp=sharing(View Our Business Logic)
