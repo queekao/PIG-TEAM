@@ -10,8 +10,10 @@
 
 # 5. Team Member: Group up with 3D model Designer , 3D animation , web engineer , unity engineer , Product Manager
 
-# 6.Component Structure:https://drive.google.com/file/d/1Yk7hx4Pyh4x5CBHwrhmS0sM6PFuLNEj0/view?usp=sharing(View the component structure)
+# 7.Component Structure:https://drive.google.com/file/d/1Yk7hx4Pyh4x5CBHwrhmS0sM6PFuLNEj0/view?usp=sharing(View the component structure)
 
-# 6.UI flow :https://drive.google.com/file/d/1BP4loQZGXwnQDsFKCh9bTJIEo3gZJA0_/view?usp=sharing(View the UI flow and functionality)
+# 8.UI flow :https://drive.google.com/file/d/1BP4loQZGXwnQDsFKCh9bTJIEo3gZJA0_/view?usp=sharing(View the UI flow and functionality)
 
-# 6.Business Logic :https://drive.google.com/file/d/1Mizjv6T6b1DctvTjNatPOosoISITNenM/view?usp=sharing(View Our Business Logic)
+# 9.Business Logic :https://drive.google.com/file/d/1Mizjv6T6b1DctvTjNatPOosoISITNenM/view?usp=sharing(View Our Business Logic)
+
+# 10. If the link to the web page won't work try this one https://contactpig.web.app/
