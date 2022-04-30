@@ -64,7 +64,7 @@
 @media (max-width: 37.5em) {
   .form input {
     padding: 1rem 2rem;
-    padding-right: 8rem;
+    padding-right: 7rem;
   }
   .form textarea {
     padding: 0.5rem;

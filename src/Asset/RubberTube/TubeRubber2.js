@@ -7,7 +7,9 @@ import {useGLTF, useAnimations} from "@react-three/drei";
 
 export default function Model({...props}) {
   const group = useRef();
-  const {nodes, materials, animations} = useGLTF("/RubberTube/tubeRubber2.glb");
+  const {nodes, materials, animations} = useGLTF(
+    "https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/RubberTube%2FtubeRubber2.glb?alt=media&token=d50a5711-1b4b-4106-8fc1-0158cfc2cfc8"
+  );
   const {actions} = useAnimations(animations, group);
   useEffect(() => {
     actions.Animation8.play();
@@ -27,4 +29,6 @@ export default function Model({...props}) {
   );
 }
 
-useGLTF.preload("/RubberTube/tubeRubber2.glb");
+useGLTF.preload(
+  "https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/RubberTube%2FtubeRubber2.glb?alt=media&token=d50a5711-1b4b-4106-8fc1-0158cfc2cfc8"
+);

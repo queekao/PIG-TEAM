@@ -7,7 +7,9 @@ import {useGLTF, useAnimations} from "@react-three/drei";
 
 export default function Model({...props}) {
   const group = useRef();
-  const {nodes, materials, animations} = useGLTF("/Shoes/AnimAir.glb");
+  const {nodes, materials, animations} = useGLTF(
+    "https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/Shoes%2FAnimAir.glb?alt=media&token=dc7d550c-6e33-4a66-8669-99cb0a0ebd64"
+  );
   const {actions} = useAnimations(animations, group);
   useEffect(() => {
     // AnimationAction[0].play()
@@ -29,4 +31,6 @@ export default function Model({...props}) {
   );
 }
 
-useGLTF.preload("/Shoes/AnimAir.glb");
+useGLTF.preload(
+  "https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/Shoes%2FAnimAir.glb?alt=media&token=dc7d550c-6e33-4a66-8669-99cb0a0ebd64"
+);

@@ -22,7 +22,7 @@
 @media (max-width: 56.25em) {
   .textList {
     gap: 1rem;
-    grid-column-gap: 2rem;
+    grid-column-gap: 4rem;
     flex-wrap: wrap;
   }
 }
@@ -47,4 +47,5 @@ footer p {
   margin: 3.5rem 0;
   border-top: 0.5px solid #fff;
   padding: 1rem 16rem;
+  text-align: center;
 }

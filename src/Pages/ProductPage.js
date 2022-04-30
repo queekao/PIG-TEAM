@@ -27,10 +27,7 @@ const ProductPage = () => {
         showContent="Show Detail"
         hideContent="Hide Detail"
       />
-      <a
-        className={classes.productLink}
-        href="https://drive.google.com/drive/folders/134gdIG-9pxQ1o876ychVHXFz7r-nEyRZ"
-      >
+      <a className={classes.productLink} href="#">
         View Product
       </a>
       <a

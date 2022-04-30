@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "pig-project-ea5ab"
+  },
+  "targets": {
+    "pig-project-ea5ab": {
+      "hosting": {
+        "new": [
+          "contactpig"
+        ]
+      }
+    }
   }
 }

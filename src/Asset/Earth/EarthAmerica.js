@@ -7,7 +7,9 @@ import {useGLTF, useAnimations} from "@react-three/drei";
 
 export default function Model({...props}) {
   const group = useRef();
-  const {nodes, materials, animations} = useGLTF("/Earth/earthAmerica.glb");
+  const {nodes, materials, animations} = useGLTF(
+    "https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/earth%2FearthAmerica.glb?alt=media&token=f9074413-827c-4297-a6cd-38dcf7afebce"
+  );
   const {actions} = useAnimations(animations, group);
   useEffect(() => {
     actions.Animation1.play();
@@ -29,5 +31,6 @@ export default function Model({...props}) {
   );
 }
 
-useGLTF.preload("/Earth/earthAmerica.glb");
-// https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/earth%2FearthAmerica.glb?alt=media&token=f9074413-827c-4297-a6cd-38dcf7afebce
+useGLTF.preload(
+  "https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/earth%2FearthAmerica.glb?alt=media&token=f9074413-827c-4297-a6cd-38dcf7afebce"
+);

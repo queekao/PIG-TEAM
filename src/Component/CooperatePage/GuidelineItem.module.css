@@ -39,6 +39,7 @@
   .itemRight {
     width: 70%;
   }
+  /* This two pseudo element for connecting line of moblie phone in cooperate page */
   .itemLeft::after {
     content: "";
     position: absolute;

@@ -8,7 +8,7 @@ import {useGLTF, useAnimations} from "@react-three/drei";
 export default function Model({...props}) {
   const group = useRef();
   const {nodes, materials, animations} = useGLTF(
-    "/Treadmill/millRunningBelt.glb"
+    "https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/treadmill%2FmillRunningBelt.glb?alt=media&token=bebb3a7a-b5b1-425c-a0a8-ed7293fc8927"
   );
   const {actions} = useAnimations(animations, group);
   useEffect(() => {
@@ -34,4 +34,6 @@ export default function Model({...props}) {
   );
 }
 
-useGLTF.preload("/Treadmill/millRunningBelt.glb");
+useGLTF.preload(
+  "https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/treadmill%2FmillRunningBelt.glb?alt=media&token=bebb3a7a-b5b1-425c-a0a8-ed7293fc8927"
+);

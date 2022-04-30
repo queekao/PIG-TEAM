@@ -38,6 +38,7 @@ const Header = () => {
   };
   const logOutHandler = () => {
     dispatch(LogInAction.logOutHandler());
+    dispatch(toggleAction.toggleOtherPage());
   };
   const toggleOtherPages = () => {
     //for closing nav

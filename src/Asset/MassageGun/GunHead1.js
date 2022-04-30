@@ -7,7 +7,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 export default function Model({ ...props }) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/MassageGun/gunHead1.glb')
+  const { nodes, materials, animations } = useGLTF('https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/massageGun%2FgunHead1.glb?alt=media&token=ebf17724-f668-48e0-b238-db6f9f4319b6')
   const { actions } = useAnimations(animations, group)
   useEffect(() => {
     actions.Animation4.play();
@@ -26,4 +26,4 @@ export default function Model({ ...props }) {
   )
 }
 
-useGLTF.preload('/MassageGun/gunHead1.glb')
+useGLTF.preload('https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/massageGun%2FgunHead1.glb?alt=media&token=ebf17724-f668-48e0-b238-db6f9f4319b6')

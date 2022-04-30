@@ -20,8 +20,8 @@ const ProductDetail = () => {
         {params.productId === "green-bike" && (
           <React.Fragment>
             <DetailItem id="bikeCushion" className={classes.item5} />
-            <DetailItem id="bikeFlyWheel" className={classes.item3} />
-            <DetailItem id="bikeGrip" className={classes.item6} />
+            <DetailItem id="bikeFlyWheel" className={classes.item6} />
+            <DetailItem id="bikeGrip" className={classes.item3} />
             <DetailItem id="bikePedal" className={classes.item2} />
             <DetailItem id="bikeSkeleton" className={classes.item1} />
           </React.Fragment>

@@ -1,4 +1,3 @@
-import "./App.css";
 import React, {Suspense} from "react";
 import {Route, Switch, Redirect} from "react-router-dom";
 import {
@@ -40,7 +39,7 @@ function App() {
   //   });
   // });
   //FOR GET IMG URL CODE
-  // const getRef = ref(storage, "gs://pig-project-ea5ab.appspot.com/earth");
+  // const getRef = ref(storage, "gs://pig-project-ea5ab.appspot.com/treadmill");
   // const getImgPath = async () => {
   //   const imgList = await listAll(getRef);
   //   const imgGroup = await imgList.items.map(async (itemRef) => {

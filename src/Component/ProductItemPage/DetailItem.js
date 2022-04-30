@@ -12,7 +12,6 @@ const DetailItem = (props) => {
   const toggleHideDetail = () => {
     setShowDetail(false);
   };
-  console.log("DetailItem");
   if (isLoading) {
     return (
       <li key={props.id} className={`${classes.item} ${props.className}`}>

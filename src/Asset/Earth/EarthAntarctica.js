@@ -7,7 +7,9 @@ import {useGLTF, useAnimations} from "@react-three/drei";
 
 export default function Model({...props}) {
   const group = useRef();
-  const {nodes, materials, animations} = useGLTF("/Earth/earthAntarctica.glb");
+  const {nodes, materials, animations} = useGLTF(
+    "https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/earth%2FearthAntarctica.glb?alt=media&token=0b51df9f-e691-4152-87f8-178a74f63f95"
+  );
   const {actions} = useAnimations(animations, group);
   useEffect(() => {
     actions.Animation2.play();
@@ -29,6 +31,7 @@ export default function Model({...props}) {
   );
 }
 
-useGLTF.preload("/Earth/earthAntarctica.glb");
-// https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/earth%2FearthAntarctica.glb?alt=media&token=0b51df9f-e691-4152-87f8-178a74f63f95
-//fucking CORS problem
+useGLTF.preload(
+  "https://firebasestorage.googleapis.com/v0/b/pig-project-ea5ab.appspot.com/o/earth%2FearthAntarctica.glb?alt=media&token=0b51df9f-e691-4152-87f8-178a74f63f95"
+);
+//finall finish CORS problem
